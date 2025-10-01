@@ -1,9 +1,26 @@
 <script>
     /*
     Alunos Aprovados
-Você possui um array de notas de alunos: [8.5, 3.7, 6.9, 7.0, 5.2].
-Peça para o usuário adicionar uma nova nota. Depois, usando for...of, conte quantos alunos foram aprovados, considerando que a nota de corte estabelecida foi 6.0.
-Exiba o número total de alunos aprovados.
+    Você possui um array de notas de alunos: [8.5, 3.7, 6.9, 7.0, 5.2].
+    Peça para o usuário adicionar uma nova nota. Depois, usando for...of, conte quantos alunos foram aprovados, considerando que a nota de corte estabelecida foi 6.0.
+    Exiba o número total de alunos aprovados.
     */
+    
+    let notas = [8.5, 3.7, 6.9, 7.0, 5.2];
 
+    const novaNota = Number(prompt(`Insira um nova nota.`));
+
+    let nova = notas.push(novaNota);
+
+    let aprovados = [];
+
+    for (let num of notas) {
+        if (num >= 6.0) {
+            aprovados.push(notas);
+        }
+    }
+
+    let quantidade = aprovados.length;
+
+    document.write(`O número de alunos aprovados é: ${quantidade}.`);
 </script>
